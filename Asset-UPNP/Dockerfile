@@ -19,9 +19,7 @@ apt-get install -y wget && \
 mkdir -p /usr/bin/asset && \
 chmod -R 777 /usr/bin/asset && \
 cd /usr/bin/asset && \
-# old wget
-# wget http://www.dbpoweramp.com/install/AssetUPnP-Linux-x64.tar.gz && \
-wget http://nteau.aphrodite.feralhosting.com/AssetUPnP-Linux-x64.tar.gz && \
+wget http://www.dbpoweramp.com/install/AssetUPnP-Linux-x64.tar.gz && \
 tar -zxvf *.gz && \
 rm *.gz && \
 apt-get purge --remove -y wget && \
