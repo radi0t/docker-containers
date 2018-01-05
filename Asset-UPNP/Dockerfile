@@ -28,4 +28,4 @@ apt-get clean
 VOLUME /root/.dBpoweramp
 VOLUME /music
 EXPOSE 45537/tcp 26125/tcp 1900/udp
-ENTRYPOINT ["/usr/bin/asset/bin/AssetUPnP"]
+ENTRYPOINT ["/usr/bin/asset/Asset-R6-Linux-x64-trial/bin/AssetUPnP"]
