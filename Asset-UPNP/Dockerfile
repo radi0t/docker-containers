@@ -1,5 +1,7 @@
 # set base os
-FROM phusion/baseimage:0.9.16
+# old os
+# FROM phusion/baseimage:0.9.16
+FROM phusion/baseimage:0.9.22
 ENV DEBIAN_FRONTEND noninteractive
 # Set correct environment variables
 ENV HOME /root
@@ -27,4 +29,3 @@ VOLUME /root/.dBpoweramp
 VOLUME /music
 EXPOSE 45537/tcp 26125/tcp 1900/udp
 ENTRYPOINT ["/usr/bin/asset/bin/AssetUPnP"]
-
