@@ -13,7 +13,7 @@ usermod -g 100 nobody && \
 usermod -d /home nobody && \
 chown -R nobody:users /home && \
 
-#Install Asset-upnp 
+#Install Asset-upnp 6.1
 apt-get update && \
 apt-get install -y wget && \
 mkdir -p /usr/bin/asset && \
