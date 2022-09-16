@@ -19,7 +19,7 @@ apt-get install -y wget && \
 mkdir -p /usr/bin/asset && \
 chmod -R 777 /usr/bin/asset && \
 cd /usr/bin/asset && \
-wget http://www.dbpoweramp.com/install/AssetUPnP-Linux-x64.tar.gz && \
+wget https://www.dbpoweramp.com/install/AssetUPnP-Linux-x64.tar.gz && \
 tar -zxvf *.gz && \
 rm *.gz && \
 apt-get purge --remove -y wget && \
@@ -28,4 +28,4 @@ apt-get clean
 VOLUME /root/.dBpoweramp
 VOLUME /music
 EXPOSE 45537/tcp 26125/tcp 1900/udp
-ENTRYPOINT ["/usr/bin/asset/Asset-R7-Linux-x64-trial/bin/AssetUPnP"]
+ENTRYPOINT ["/usr/bin/asset/Asset-R7.4-Linux-x64-trial/bin/AssetUPnP"]
