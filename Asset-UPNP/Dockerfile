@@ -1,7 +1,8 @@
 # set base os
 # old os
 # FROM phusion/baseimage:0.9.16
-FROM phusion/baseimage:0.9.22
+# FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:noble-1.0.2
 ENV DEBIAN_FRONTEND noninteractive
 # Set correct environment variables
 ENV HOME /root
@@ -12,8 +13,7 @@ usermod -u 99 nobody && \
 usermod -g 100 nobody && \
 usermod -d /home nobody && \
 chown -R nobody:users /home && \
-
-#Install Asset-upnp 6.6
+#Install Asset-upnp 
 apt-get update && \
 apt-get install -y wget && \
 mkdir -p /usr/bin/asset && \
